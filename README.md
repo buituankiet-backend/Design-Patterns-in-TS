@@ -1,1 +1,1 @@
-# Design-Patterns-in-TS
+# Design Patterns in TS
