@@ -33,4 +33,16 @@ function getPrice(originalPrice, typePromotion) {
     return getPriceStrategies[typePromotion](originalPrice);
 }
 
-console.log(getPrice(200, 'blackFriday'));
+
+const getPriceArray = new Map([
+    ['preOder', 'preOderPrice'],
+    ['default', 'defaultPrice'],
+    ['blackFriday', 'blackFridayPrice'],
+])
+
+function getPriceArrays(typePromotion) {
+    return getPriceArray.get(typePromotion)
+}
+
+// console.log(getPrice(200, 'blackFriday'));
+console.log(getPriceArrays('preOder'))
